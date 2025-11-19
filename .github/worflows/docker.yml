@@ -3,6 +3,7 @@ on:
 
 jobs:
   deploy:
+    runs-on: ubuntu-latest
     name: deploy on docker hub
     steps:
       name: checkout the repository
