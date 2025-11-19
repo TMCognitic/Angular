@@ -5,5 +5,5 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-     - name: checkout the repository
-       run: ls -l
+     - name: list files before checkout
+       run: ls -l -a
