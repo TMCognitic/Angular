@@ -16,3 +16,8 @@ jobs:
         with:
           username: ${{ secrets.Docker_UserName }}
           password: ${{ secrets.Docker_Passwd }}
+      - name: Build and push
+        uses: docker/build-push-action@v6
+        with:
+          push: true
+          tags: briareostm/angular:latest
